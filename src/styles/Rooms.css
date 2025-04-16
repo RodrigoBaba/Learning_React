@@ -1,0 +1,80 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.button-container button {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 400px; 
+    height: 200px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container button:hover {
+    transform: scale(1.05);
+}
+
+
+/* O fundo da Modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fundo semi-transparente */
+}
+
+/* O conteúdo da Modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    /* Largura máxima */
+}
+
+.modal-content img{
+    width: 400px; 
+    height: 200px; 
+}
+
+.list-itens{
+    list-style: none;
+    padding: 0%;
+}
+
+.list-itens li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-itens li h5{
+    margin: 0px 0px 10px 0px;
+}
+
+/* O botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

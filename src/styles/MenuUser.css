@@ -1,0 +1,112 @@
+/* .menu-user path{
+    cursor: pointer;
+} */
+
+/* .container-menu-user {
+    width: 5%;
+    padding: 10px 20px;
+    position: relative;
+    transform-origin: right;
+    opacity: 1;
+    transform: scaleX(1);
+    transition: opacity 0.5s ease, transform 0.5s ease, width 0.5s ease;
+}
+
+.container-menu-user.active {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 30%;
+    opacity: 1;
+    transform: scaleX(1);
+    background-color: #33333365;
+}
+
+.menu-user {
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+.menu-user-links {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #33333365;
+}
+
+.menu-user-links.active {
+    display: block;
+} */
+
+/* Contêiner do menu */
+.container-menu-user {
+    width: 2%;
+    padding: 10px 20px;
+    position: absolute; 
+    right: 0;
+    top: 0; 
+    transform-origin: left;
+    transform: scaleX(1); 
+    transition: opacity 0.5s ease, transform 0.5s ease, width .5s ease;
+    z-index: 2;
+}
+
+/* Quando a classe 'active' é aplicada */
+.container-menu-user.active {
+    width: 150px;
+    height: 50%;
+    transform: scaleX(1); 
+    /* background-color: #33333365; */
+    /* background-color: #b9848444; */
+    background-color: #a7a7aa;
+    overflow: hidden;
+}
+
+/* Estilo do item de menu (ícone ou botão) */
+.menu-user {
+    font-size: larger;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Menu de links */
+.menu-user-links{
+    width: 100%;
+    display: none; 
+    position: absolute; 
+    top: 60px; 
+    right: 0; 
+}
+
+/* Quando a classe 'active' for aplicada ao menu de links */
+.menu-user-links.active {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-user-links ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-user-links li {
+    /* border: 1px solid; */
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-user-links li:hover {
+    background-color: #b9848444;
+}

@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+
+.container-main {
+    width: 100%;
+    display: flex;
+}
+
+.container-content {
+    width: 90%;
+    background: linear-gradient(to bottom, #00011f, #000344);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white !important;
+}

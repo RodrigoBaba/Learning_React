@@ -1,0 +1,79 @@
+.container-register-component{
+    height: 50%;
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: 25px;
+    background-color: #a7a7aa;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container{
+    width: 90%;
+    text-align: left;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+
+
+/* Layout dos Botões */
+.form-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.button-cancel {
+    background-color: #ed1f24;
+}
+
+.button-save {
+    background-color: #27b573; 
+}
+
+.button-cancel:hover{
+    background-color: #ed1f2280; 
+}
+
+.button-save:hover {
+    background-color: #27b57369; 
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #a7a7aa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
