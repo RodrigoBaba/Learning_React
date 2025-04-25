@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Navigation.css';  // Importando o CSS específico para o componente
 import MenuUser from '../components/MenuUser';
 import { Link } from 'react-router-dom';
+import { FaPlus, FaClipboardList, FaRedo, FaExclamationCircle, FaHistory, FaDoorOpen, FaUsers } from 'react-icons/fa';
 
 function Navigation() {
     // Usando o estado para alternar a visibilidade do menu
@@ -22,6 +23,15 @@ function Navigation() {
                     <span className='bar'></span>
                     <span className='bar'></span>
                 </div>
+                <ul className={`menu-links ${isMenuOpen ? '' : 'active'}`}>
+                    <Link to='/registerComponent'><li ><FaPlus /></li></Link>
+                    <Link to='/reserveComponent'><li ><FaClipboardList /></li></Link>
+                    <Link to='/registerComponent'><li ><FaRedo /></li></Link>
+                    <Link to='/registerComponent'><li ><FaExclamationCircle  /></li></Link>
+                    <Link to='/registerComponent'><li ><FaHistory /></li></Link>
+                    <Link to='/rooms'><li ><FaDoorOpen /></li></Link>
+                    <Link to='/registerComponent'><li ><FaUsers /></li></Link>
+                </ul>                
                 <ul className={`menu-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><Link to='/registerComponent'>Cadastrar</Link></li>
                     <li><Link to='/reserveComponent'>Reservar</Link></li>
